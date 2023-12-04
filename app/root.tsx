@@ -13,7 +13,7 @@ import customCss from '~/stylesheets/custom.css';
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "Open AI base application",
+  title: "BankGPT",
   viewport: "width=device-width,initial-scale=1",
 });
 
@@ -24,7 +24,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="h-full bg-white text-black font-body leading-6 bg-fixed">
+      <body className="h-full bg-gray-100 text-black font-body leading-6 bg-fixed">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
@@ -43,11 +43,11 @@ export function links() {
     {
       rel: "preconnect",
       href: "https://fonts.gstatic.com",
-      crossOrigin: 'true',
+      crossOrigin: "true",
     },
     {
       rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap",
+      href: "https://fonts.googleapis.com/css2?family=Open Sans:wght@300;400;500;700&display=swap",
     },
     {
       rel: "stylesheet",
@@ -56,6 +56,6 @@ export function links() {
     {
       rel: "stylesheet",
       href: customCss,
-    }
+    },
   ];
 }

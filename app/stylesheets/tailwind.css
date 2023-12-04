@@ -26,12 +26,12 @@
   }
 
   p + p {
-    margin-top: theme(space.4);
+    /* margin-top: theme(space.2); */
   }
 
-  .response > * + * {
+  /* .response > * + * {
     margin-top: 1rem;
-  }
+  } */
 
   ol,
   ul {
@@ -39,12 +39,17 @@
     margin-left: 1rem;
   }
 
+  ol li {
+    margin-bottom: 5px;
+  }
+
   pre {
     background-color: white;
     padding: theme('padding.1') theme('padding.2');
     border-radius: theme('borderRadius.lg');
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    overflow: auto;
   }
 
   pre code {
@@ -54,7 +59,7 @@
   }
 
   code {
-    font-size: 1rem;
+    font-size: 0.9rem;
     background-color: white;
     padding: theme('padding.1') theme('padding.2');
     border-radius: theme('borderRadius.lg');

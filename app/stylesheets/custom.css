@@ -1,1 +1,142 @@
 /* Insert custom styling here */
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0,20px,0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+body {
+  background-color: #F1F5F9;
+}
+
+.intro-content h1 {
+  opacity: 0;
+}
+
+.intro-content > h1:first-child {
+  animation: fadeInUp .5s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: .1s
+}
+.intro-content > h1:nth-child(2) {
+  animation: fadeInUp .5s ease;
+  animation-fill-mode: forwards;
+  animation-delay: .3s
+}
+
+.made-with {
+  display: none;
+}
+
+.user {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  background: url('https://www.svgrepo.com/show/382096/female-avatar-girl-face-woman-user.svg') center center;
+  background-size: contain;
+  margin-left: -25px;
+  margin-right: 15px;
+}
+
+#message::placeholder {
+  color: #aaa;
+}
+
+#message {
+  border-width: 2px;
+  /* animation: fadeInUp .5s ease-out; */
+  transition: box-shadow 0.3s ease-out, border-color 0.3s ease-out;
+}
+
+#message:hover, #message:focus {
+  border-color: #5508F4;
+}
+
+#message:focus {
+  box-shadow: 0px 0px 100px 0px #5508f425;
+}
+
+#message:disabled {
+  border-color: rgb(156, 163, 175);
+}
+
+.form-container {
+  background: linear-gradient(0deg, #f3f4f6 83%, rgba(255,255,255,0) 100%);
+  z-index: 2;
+}
+
+.horizontal-bar {
+  position: relative;
+  padding: 10px 15px;
+  line-height: 1.3rem;
+  color: white;
+}
+
+.horizontal-bar.secondary {
+  color: black;
+}
+
+.horizontal-bar .bar {
+  border-radius: 10px;
+  background: #EFE7FF;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.horizontal-bar.primary .bar {
+  background-color: #5508F4;
+}
+
+.horizontal-bar.primary .price {
+  color: white;
+}
+
+.horizontal-bar .price {
+  color: #666;
+  font-size: .8rem;
+  z-index: 1;
+  position: relative;
+}
+
+.horizontal-bar .title {
+  z-index: 1;
+  position: relative;
+}
+
+.transaction-list-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.transaction-list-item.first {
+  margin-top: 10px;
+}
+
+.transaction-list-item .price {
+  margin-left: auto;
+}
+
+.transaction-list-item .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #EFE7FF;
+  border-radius: 50%;
+}
+.transaction-list-item .icon svg {
+  color: #5508F4;
+}

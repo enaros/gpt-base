@@ -1,13 +1,6 @@
 # GPT-3.5-turbo base template
 This repo's purpose is to be a starting point for contextual based chat interactions with Open Ai's [gpt-3.5-turbo](https://platform.openai.com/docs/guides/chat) API.
 
-It is meant to be forked, cloned, and copied so folks can play around with the API. Please customize the styling, break things, and most of all, have fun!
-
-[Check out the step by step guide](https://medium.com/@joshua.v.sanger/building-a-context-loaded-chat-assistant-with-openai-and-remix-9f72c6d7962b)
-
-![final_cropped_image](https://user-images.githubusercontent.com/5130040/229966339-e9f83fe2-de1d-4646-a629-47a9064d1146.png)
-
-
 # Getting started
 1. Clone or fork the repo
 2. Run `npm i`
@@ -27,6 +20,3 @@ This is build using [Remix](https://remix.run/) (a react based framework), [Type
 
 # Deployment
 This repo was set up to deploy to [Vercel](https://vercel.com/) as the main deplopyment source but you can customize it if you wish to suit your needs.
-
-# Feedback
-Would love to hear some feedback. Please feel free to open issues or hit me up on [Twitter](https://twitter.com/JoshSanger_eth).
